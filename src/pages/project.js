@@ -3,13 +3,13 @@ import * as React from 'react'
 import Layout from '../components/layout'
 
 //define component
-const IndexPage = () => {
+const ProjectPage = () => {
   return(
-    <Layout pageTitle = 'Home'>
-      <p>Homepage</p>
+    <Layout pageTitle = 'Project'>
+      <p>Project page</p>
     </Layout>
   )
 }
 
 //export component
-export default IndexPage
+export default ProjectPage

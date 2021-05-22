@@ -1,11 +1,15 @@
 {
-  "name": "oanh-le",
+  "name": "oanhle.com",
   "version": "1.0.0",
   "private": true,
-  "description": "Oanh Le",
+  "description": "My portfolio website",
   "keywords": [
-    "gatsby"
+    "gatsby", "react"
   ],
+  "license": "MIT",
+  "repository": {
+    "url": "https://github.com/oanhgle/oanhle.com.git"
+  },
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
