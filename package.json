@@ -4,7 +4,8 @@
   "private": true,
   "description": "My portfolio website",
   "keywords": [
-    "gatsby", "react"
+    "gatsby",
+    "react"
   ],
   "license": "MIT",
   "repository": {
@@ -18,9 +19,21 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.12.0",
     "gatsby": "^3.4.1",
     "gatsby-plugin-gatsby-cloud": "^2.5.0",
+    "gatsby-plugin-smoothscroll": "^1.2.0",
+    "gatsby-plugin-styled-components": "^4.5.0",
+    "normalize.css": "^8.0.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.5",
+    "gatsby-plugin-postcss": "^4.5.0",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.2"
   }
 }

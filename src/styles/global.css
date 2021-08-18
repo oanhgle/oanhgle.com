@@ -1,0 +1,100 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@300&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  transition: all 300ms ease 0s;
+  overflow-x: hidden;
+  background-color: #ffffff;
+  color: black;
+}
+
+.full-width-container {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+.patterns {
+  height: 10vh;
+}
+
+/* ANIMATION TITLE */
+svg text {
+  padding: 200px;
+  font-family: Lora;
+  letter-spacing: 10px;
+  stroke: #585c75;
+  font-size: 150px;
+  font-weight: 700;
+  stroke-width: 3;
+ 
+  animation: textAnimation 5s infinite alternate;
+  
+}
+
+@keyframes textAnimation {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill:#b1a6c4
+
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: rgba(255, 179, 179, 0)
+  }
+  
+}
+
+/* HIGHLIGHT HOVER */
+.content h1{
+  display: inline;
+  background-repeat: no-repeat;
+  transition: all 500ms ease-in-out;
+}
+.v2 h1{
+  background-position: left;
+  background-size: 0% 100%;
+  background-image: linear-gradient(#d6d4ec,#d6d4ec);
+}
+.v2:hover h1 {
+  background-size: 100% 100%;
+}
+
+.aside {
+  writing-mode: vertical-lr;
+}
+.vl {
+  border-left: 1px solid gray;
+  margin-left: 45%;
+  left: 50%;
+  height: 200px;
+}
+
+/* NAVIGATION BAR */
+header {
+  top: 0;
+  z-index:1;
+  background-color: rgba(255, 255, 255, 0.486);
+  backdrop-filter: blur(6px);
+  transition: box-shadow 0.3s ease;
+}
+header[data-active='true'] {
+  box-shadow: 0 2px 8px rgba(152, 168, 188, .2);
+}
+header {
+  position: fixed;
+  width: 100%;
+}
+
+/* PROGRESS CIRCLE */
+.circle {
+  height: 400vh;
+}
