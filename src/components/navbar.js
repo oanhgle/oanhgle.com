@@ -40,7 +40,7 @@ const Navbar = () => {
 
                             {/* Mobile menu button */}
                             <button
-                                class="text-gray-700 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                                className="text-gray-700 cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
                                 type="button"
                                 onClick={() => setNavbarOpen(!navbarOpen)}
                             >
@@ -65,8 +65,8 @@ const Navbar = () => {
                         </div>
 
                         {/* nav bar content */}
-                        <div class={"lg:flex flex-grow items-center" + (navbarOpen ? " flex" : " hidden")}>
-                            <ul class="flex flex-col lg:flex-row list-none ml-auto">
+                        <div className={"lg:flex flex-grow items-center" + (navbarOpen ? " flex" : " hidden")}>
+                            <ul className="flex flex-col lg:flex-row list-none ml-auto">
                                 <li className="nav-item">
                                     <a href="#about" className="font-mono px-3 py-2 flex items-center text-sm leading-snug text-black hover:text-primary">
                                         about
@@ -88,11 +88,11 @@ const Navbar = () => {
                                     </a>
                                 </li>
                                 <li className="nav-item mx-5">
-                                    <a className="font-mono px-3 py-2 flex items-center text-sm text-black text-on-accent border border-black rounded-md transition duration-300 ease-in-out hover:bg-primary hover:text-white">
+                                    <a className="cursor-pointer font-mono px-3 py-2 flex items-center text-sm text-black text-on-accent border border-black rounded-md transition duration-300 ease-in-out hover:bg-primary hover:text-white">
                                         resume
                                     </a>
-                                    <span class="absolute h-3 w-3 rounded-full bg-indigo-400 mx-17 -my-11 flex ">
-                                        <span class="h-3 w-3 rounded-full bg-primary animate-ping"></span>
+                                    <span className="absolute h-3 w-3 rounded-full bg-indigo-400 mx-17 -my-11 flex ">
+                                        <span className="h-3 w-3 rounded-full bg-primary animate-ping"></span>
                                     </span>
                                 </li>
                             </ul>

@@ -14,7 +14,7 @@ const Contact = () => {
 
           <div className="mx-auto pt-10 text-center">
             <a href="mailto:oanhngle@gmail.com">
-              <span class="font-mono text-on-accent border-2 border-primary rounded-full font-semibold text-primary px-4 py-3 transition duration-300 ease-in-out hover:bg-primary hover:text-white">
+              <span className="font-mono text-on-accent border-2 border-primary rounded-full font-semibold text-primary px-4 py-3 transition duration-300 ease-in-out hover:bg-primary hover:text-white">
                   Say hello {' '}
                   <span role="img" aria-label="wave">
                     👋
