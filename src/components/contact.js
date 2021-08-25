@@ -8,8 +8,8 @@ const Contact = () => {
             {'<'} get in touch{' />'}
           </h1>
 
-          <div className="content v2 px-4 mt-4 text-center">
-            <h1>Feel free to email me about anything</h1>
+          <div className="content highlight px-4 mt-4 text-center">
+            <h1>Need a tutor? Want to discuss the meaning of boba? <br></br> Feel free to email me about anything</h1>
           </div>
 
           <div className="mx-auto pt-10 text-center">

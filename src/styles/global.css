@@ -59,14 +59,22 @@ svg text {
   background-repeat: no-repeat;
   transition: all 500ms ease-in-out;
 }
-.v2 h1{
+.highlight h1{
   background-position: left;
   background-size: 0% 100%;
   background-image: linear-gradient(#d6d4ec,#d6d4ec);
 }
-.v2:hover h1 {
+.highlight:hover h1 {
   background-size: 100% 100%;
 }
+.highlight:hover h1 svg path{
+  fill:rgb(124, 153, 252);
+}
+
+.highlight-under {
+  background: linear-gradient(to top, #d6d4ec 50%, transparent 50%);
+}
+
 
 .aside {
   writing-mode: vertical-lr;

@@ -14,11 +14,13 @@ module.exports = {
         'primary': '#b1a6c4',
         'secondary': '#ffed4a',
         'danger': '#e3342f',
+        'hover': 'rgb(124, 153, 252)',
       },
       backgroundColor: theme => ({
         'primary': '#b1a6c4',
         'secondary': '#ffed4a',
         'danger': '#e3342f',
+        'hover': 'rgb(124, 153, 252)',
       }),
       
     },

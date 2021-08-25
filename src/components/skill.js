@@ -8,8 +8,23 @@ const SkillPage = () => {
             <div className="flex flex-wrap md grid md:grid-cols-2 divide-x p-10">
                 {/* Language */}
                 <div className = "p-10">
-                    <div className ="content v2 text-center">
+                    <div className ="content highlight text-center">
                         <h1 className="text-lg font-bold">Languages</h1>
+                    </div>
+                    <div className="flex mt-16 font-light text-gray-900">
+                        <h1>SQL</h1>
+                        <div className="mx-20 grid grid-cols-10 gap-3">
+                            <span className="w-4 h-4 bg-primary border border-black inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 bg-primary border border-black inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 bg-primary border border-black inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 bg-primary border border-black inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 bg-primary border border-black inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 bg-primary border border-black inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 bg-primary border border-black inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 bg-primary border border-black inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 border border-black inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 border border-black inset-0 transform hover:rotate-45 transition duration-300"></span>
+                        </div>
                     </div>
                     <div className="flex mt-16 font-light text-gray-900 ">
                         <h1>C/C++</h1>
@@ -91,7 +106,7 @@ const SkillPage = () => {
 
                 {/* Technology */}
                 <div className="p-10">
-                    <div className ="content v2 text-center">
+                    <div className ="content highlight text-center">
                         <h1 className="text-lg font-bold">Technologies</h1>
                     </div>
                     <div className="relative mt-16">

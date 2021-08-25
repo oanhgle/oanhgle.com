@@ -1,7 +1,7 @@
 export default [
     {
         title: 'oanhle.com',
-        description: 'My personal porfolio',
+        description: 'My personal portfolio built from scratch with Gatsby and hosted via Netlify.',
         technology: ['gatsby', 'react', 'tailwind'],
         year: '2021',
         links: [
@@ -15,8 +15,8 @@ export default [
     },
     {
       title: 'Dance Academy',
-      description: 'SQL Practice',
-      technology: ['sql', 'react', 'express', 'node'],
+      description: 'This team project demonstrates an online enterprise management system that be backed by PostgreSQL. We used React to process the frontend and application logic, and Node to connect to the database and send in queries.',
+      technology: ['sql', 'node', 'react', 'express'],
       year: '2021',
       links: [
         {
@@ -26,7 +26,7 @@ export default [
     },
     {
       title: "VR Driven Surgical Robot",
-      description: 'VR Simulation of a surgery',
+      description: 'The Association for Computing Machinery (USF Chapter) and I worked together to integrate virtual reality with robotics in order to build a surgery simulation. The product is designed to offer a solution to optimize surgical operation.',
       technology: ['c#', 'unity', 'arduino'],
       year: '2021',
       links: [
@@ -36,22 +36,8 @@ export default [
       ],
     },
     {
-      title: 'Quotes Generator API',
-      description: 'RESTful API for quotations database',
-      technology: ['express', 'node', 'bootstrap'],
-      year: '2020',
-      links: [
-        {
-          website: 'https://bts-quotes-api.herokuapp.com/',
-        },
-        {
-          github: 'https://github.com/oanhgle/bangtan-api',
-        },
-      ],
-    },
-    {
       title: 'COVID Care',
-      description: 'SASEHackathon ✨ A web app solution for healthcare remote access during the pandemic',
+      description: 'This product was designed as a solution for SASEHack 2020. Given the struggles we are facing globally when hospitals and clinics are usually packed, our team built a web app for more efficient healthcare remote access during the pandemic.',
       technology: ['react', 'bootstrap', 'chatbot-api'],
       year: '2020',
       links: [
@@ -63,10 +49,24 @@ export default [
         },
       ],
     },
+    {
+      title: 'Quotes Generator API',
+      description: 'A simple open source RESTful API that is used to fetch inspirational quotes from a famous k-pop boyband BTS.',
+      technology: ['node', 'express', 'bootstrap'],
+      year: '2020',
+      links: [
+        {
+          website: 'https://bts-quotes-api.herokuapp.com/',
+        },
+        {
+          github: 'https://github.com/oanhgle/bangtan-api',
+        },
+      ],
+    },
   
     {
       title: 'Canine ATM',
-      description: 'A command line ATM application',
+      description: 'A command line ATM application that fully supports four functionalities: check balance, transfer funds, withdraw, and deposit.',
       technology: ['java'],
       year: '2020',
       links: [
@@ -77,12 +77,13 @@ export default [
     },
     {
       title: 'PCVS',
-      description: 'Pinellas County Veteran Service: A service app for local veterans',
+      description: 'This mobile app was built as part of a 2018 Congressional App Challenge project. It is designed to assist Pinellas County veterans and their relatives in finding services to suit their needs and lifestyle in the local area. This is a Florida’s thirteenth Congressional District winner in 2018 and was featured for one year on the permanent display in the U.S. Capitol Building and on the House.gov website.',
       technology: ['outsystems'],
       year: '2018',
       links: [
         {
-          demo: 'https://github.com/oanhgle/atm',
+          demo: 'https://youtu.be/Jq6gdxbIqmk',
+          article: 'https://www.congressionalappchallenge.us/2018-fl13/',
         },
       ],
     },

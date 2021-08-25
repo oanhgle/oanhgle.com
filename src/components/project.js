@@ -12,7 +12,7 @@ const ProjectPage = () => {
             {projects.map((project) => {
                 return(
                     <div className="flex flex-col ">
-                        <div className="bg-white shadow-md rounded-2xl p-4 hover:shadow-xl transform hover:scale-105 transition duration-500 hover:content v2">
+                        <div className="bg-white shadow-md rounded-2xl p-4 hover:shadow-xl transform hover:scale-105 transition duration-500 hover:content highlight">
                             <div className= "flex-none lg:flex">
                                 <div className="flex-auto ml-3 justify-evenly py-2">
                                     <div className="flex flex-wrap ">
@@ -40,11 +40,16 @@ const ProjectPage = () => {
                                                         <svg xmlns="http://www.w3.org/2000/svg" className="inline-flex h-5 w-5 mr-2" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
                                                         <path d="M17.001 20h-11a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4v2h-4v11h11v-4h2v4a2 2 0 0 1-2 2zm-5.3-6.293l-1.41-1.414L16.584 6h-3.583V4h7v7h-2V7.415l-6.3 6.292z"/>
                                                     </svg></a>}
+
+                                                    {link.article && 
+                                                    <a href= {link.article} target="_blank" className="fill-current text-black hover:text-primary">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" className="inline-flex h-5 w-5 mr-2" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M19 5v14H5V5h14m0-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2z" fill="currentColor"></path><path d="M14 17H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" fill="currentColor"></path></svg>
+                                                        </a>}
                                                 </span>
                                             )})}
                                             </div></span>
                                         </div>
-                                        <div className="content v2">
+                                        <div className="content highlight">
                                             <h1 className="flex-auto text-lg font-bold">{project.title}</h1>
                                         </div>
                                     </div>
