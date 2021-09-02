@@ -3,10 +3,6 @@
 @import 'tailwindcss/utilities';
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:wght@300&display=swap');
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   transition: all 300ms ease 0s;
   overflow-x: hidden;
@@ -100,9 +96,4 @@ header[data-active='true'] {
 header {
   position: fixed;
   width: 100%;
-}
-
-/* PROGRESS CIRCLE */
-.circle {
-  height: 400vh;
 }

@@ -2,6 +2,11 @@ import * as React from 'react'
 import { useState, useEffect } from "react"
 import "../styles/global.css"
 
+// https://medium.com/@chrisfitkin/how-to-smooth-scroll-links-in-gatsby-3dc445299558
+if (typeof window !== 'undefined') {
+    require('smooth-scroll')('a[href*="#"]');
+  }
+
 const Navbar = () => {
     // determined if page has scrolled
     const [state, setState] = useState({

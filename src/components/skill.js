@@ -1,12 +1,16 @@
 import * as React from 'react'
+import Fade from 'react-reveal/Fade';
 
 //define component
 const SkillPage = () => {
     return(
     <div className="container m-auto mt-25 -mb-24 sm:px-12 md:px-20 max-w-screen-xl px-15 py-40 flex flex-col lg:flex items-center lg:justify-center lg:space-x-6">
-        <h1 className="font-mono text-gray-900">{'<'} skills{' />'}</h1>
-            <div className="flex flex-wrap md grid md:grid-cols-2 divide-x p-10">
-                {/* Language */}
+        <Fade top>
+            <h1 className="font-mono text-gray-900">{'<'} skills{' />'}</h1>
+        </Fade>
+        <div className="flex flex-wrap md grid md:grid-cols-2 divide-x p-10">
+            {/* Language */}
+            <Fade left>
                 <div className = "p-10">
                     <div className ="content highlight text-center">
                         <h1 className="text-lg font-bold">Languages</h1>
@@ -103,8 +107,10 @@ const SkillPage = () => {
                         </div>
                     </div>
                 </div>
+            </Fade>
 
-                {/* Technology */}
+            {/* Technology */}
+            <Fade right>
                 <div className="p-10">
                     <div className ="content highlight text-center">
                         <h1 className="text-lg font-bold">Technologies</h1>
@@ -210,8 +216,8 @@ const SkillPage = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Fade>
         </div>
-    )
-}
+    </div>
+)}
 export default SkillPage
