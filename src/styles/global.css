@@ -266,5 +266,3 @@ header {
 .dark-button input[type=checkbox]:checked + label:after {
   transform: translateY(75px) scale(1);
 }
-
-

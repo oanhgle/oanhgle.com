@@ -1,22 +1,36 @@
 export default [
     {
-        title: 'oanhle.com',
-        description: 'My personal portfolio built from scratch with Gatsby and hosted via Netlify.',
-        technology: ['gatsby', 'react', 'tailwind'],
-        year: '2021',
-        links: [
-          {
-            website: 'https://github.com/oanhgle/oanhle.com',
-          },
-          {
-            github: 'https://github.com/oanhgle/oanhle.com',
-          },
-        ],
+      title: 'gongchatampa.com',
+      description: 'A website designed for Gong Cha Tampa',
+      technology: ['CSS', 'Bootstrap', 'PHP'],
+      year: '2021',
+      links: [
+        {
+          website: 'https://gongchatampa.com/',
+        },
+        {
+          github: 'https://github.com/augustamajor/gongchasite',
+        },
+      ],
+    },
+    {
+      title: 'oanhgle.com',
+      description: 'My personal portfolio built from scratch with Gatsby and hosted via Netlify.',
+      technology: ['Gatsby', 'React', 'Tailwind'],
+      year: '2021',
+      links: [
+        {
+          website: 'https://www.oanhgle.com/',
+        },
+        {
+          github: 'https://github.com/oanhgle/oanhle.com',
+        },
+      ],
     },
     {
       title: 'Dance Academy',
       description: 'This team project demonstrates an online enterprise management system that be backed by PostgreSQL. We used React to process the frontend and application logic, and Node to connect to the database and send in queries.',
-      technology: ['sql', 'node', 'react', 'express'],
+      technology: ['SQL', 'Node', 'React', 'Express'],
       year: '2021',
       links: [
         {
@@ -27,7 +41,7 @@ export default [
     {
       title: "VR Driven Surgical Robot",
       description: 'The Association for Computing Machinery (USF Chapter) and I worked together to integrate virtual reality with robotics in order to build a surgery simulation. The product is designed to offer a solution to optimize surgical operation.',
-      technology: ['c#', 'unity', 'arduino'],
+      technology: ['C#', 'Unity', 'Arduino'],
       year: '2021',
       links: [
         {
@@ -38,7 +52,7 @@ export default [
     {
       title: 'COVID Care',
       description: 'This product was designed as a solution for SASEHack 2020. Given the struggles we are facing globally when hospitals and clinics are usually packed, our team built a web app for more efficient healthcare remote access during the pandemic.',
-      technology: ['react', 'bootstrap', 'chatbot-api'],
+      technology: ['React', 'Bootstrap', 'API'],
       year: '2020',
       links: [
         {
@@ -52,7 +66,7 @@ export default [
     {
       title: 'Quotes Generator API',
       description: 'A simple open source RESTful API that is used to fetch inspirational quotes from a famous k-pop boyband BTS.',
-      technology: ['node', 'express', 'bootstrap'],
+      technology: ['Node', 'Express', 'Bootstrap', 'Heroku'],
       year: '2020',
       links: [
         {
@@ -67,7 +81,7 @@ export default [
     {
       title: 'Canine ATM',
       description: 'A command line ATM application that fully supports four functionalities: check balance, transfer funds, withdraw, and deposit.',
-      technology: ['java'],
+      technology: ['Java'],
       year: '2020',
       links: [
         {
@@ -78,7 +92,7 @@ export default [
     {
       title: 'PCVS',
       description: 'This mobile app was built as part of a 2018 Congressional App Challenge project. It is designed to assist Pinellas County veterans and their relatives in finding services to suit their needs and lifestyle in the local area. This is a Florida’s thirteenth Congressional District winner in 2018 and was featured for one year on the permanent display in the U.S. Capitol Building and on the House.gov website.',
-      technology: ['outsystems'],
+      technology: ['Outsystems'],
       year: '2018',
       links: [
         {
