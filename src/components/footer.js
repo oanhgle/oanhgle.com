@@ -5,7 +5,7 @@ const Footer = () => {
   return(
     <footer className="relative w-full h-56 overflow-hidden">
     <div className="container h-full md:max-w-screen-md lg:max-w-screen-xl m-auto px-5 md:px-20 pb-12 pt-24">
-      <div className="container flex-col justify-between md:space-y-8">
+      <div className="container flex-col justify-between md:space-y-8" style={{color: 'var(--primary)'}}>
         <div className="flex flex-col-reverse md:flex-row md:justify-between space-y-reverse space-y-8 md:space-y-0">
           <Fade big>
             <span
@@ -24,7 +24,7 @@ const Footer = () => {
                 >
                   <svg
                     aria-hidden="true"
-                    className="h-8 w-8 hover:text-primary hover:text-accent transition duration-100"
+                    className="h-8 w-8 icon transition duration-100"
                     fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 30 30"
@@ -45,7 +45,7 @@ const Footer = () => {
                 >
                   <svg
                     aria-hidden="true"
-                    className="h-8 w-8 hover:text-primary hover:text-accent transition duration-100"
+                    className="h-8 w-8 icon transition duration-100"
                     fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 30 30"
@@ -66,7 +66,7 @@ const Footer = () => {
                 >
                   <svg
                     aria-hidden="true"
-                    className="h-8 w-8 hover:text-primary hover:text-accent transition duration-100"
+                    className="h-8 w-8 icon transition duration-100"
                     fill="currentColor"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 32 32"

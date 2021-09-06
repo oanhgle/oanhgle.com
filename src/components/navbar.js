@@ -41,7 +41,7 @@ const Navbar = () => {
                     <div className="container m-auto mt-25 sm:px-12 md:px-8 max-w-screen-xl">
                         <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-blueGray-500 rounded">
                             <div className="w-full relative flex justify-between lg:w-auto px-5 lg:static lg:block lg:justify-start">
-                                <a href = '#home' className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-black">
+                                <a href = '#home' className="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase" style={{color: 'var(--primary)'}}>
                                     Oanh Le
                                 </a>
 
@@ -73,32 +73,32 @@ const Navbar = () => {
 
                             {/* nav bar content */}
                             <div className={"lg:flex flex-grow items-center" + (navbarOpen ? " flex" : " hidden")}>
-                                <ul className="flex flex-col lg:flex-row list-none ml-auto">
+                                <ul className="flex flex-col lg:flex-row list-none ml-auto"  style={{color: 'var(--primary)'}}>
                                     <li className="nav-item">
-                                        <a href="#about" className="font-mono px-3 py-2 flex items-center text-sm leading-snug text-black hover:text-primary">
+                                        <a href="#about" className="font-mono px-3 py-2 flex items-center text-sm leading-snug icon">
                                             about
                                         </a>
                                     </li>
                                     <li className="nav-item"> 
-                                        <a href="#project" className="font-mono px-3 py-2 flex items-center text-sm leading-snug text-black hover:text-primary">
+                                        <a href="#project" className="font-mono px-3 py-2 flex items-center text-sm leading-snug icon">
                                             project
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#skills" className="font-mono px-3 py-2 flex items-center text-sm leading-snug text-black hover:text-primary">
+                                        <a href="#skills" className="font-mono px-3 py-2 flex items-center text-sm leading-snug icon">
                                             skills
                                         </a>
                                     </li>
                                     <li className="nav-item">
-                                        <a href="#contact" className="font-mono px-3 py-2 flex items-center text-sm leading-snug text-black hover:text-primary">
+                                        <a href="#contact" className="font-mono px-3 py-2 flex items-center text-sm leading-snug icon">
                                             contact
                                         </a>
                                     </li>
                                     <li className="nav-item mx-5">
-                                        <a className="cursor-pointer font-mono px-3 py-2 flex items-center text-sm text-black text-on-accent border border-black rounded-md transition duration-300 ease-in-out hover:bg-primary hover:text-white">
+                                        <a className="cursor-pointer font-mono px-3 py-2 flex items-center text-sm text-on-accent border border-square rounded-md transition duration-300 ease-in-out effect">
                                             resume
                                         </a>
-                                        <span className="absolute h-3 w-3 rounded-full bg-indigo-400 mx-17 -my-11 flex ">
+                                        <span className="absolute h-3 w-3 rounded-full mx-17 -my-11 flex" style={{'background-color': 'var(--ping)'}}>
                                             <span className="h-3 w-3 rounded-full bg-primary animate-ping"></span>
                                         </span>
                                     </li>

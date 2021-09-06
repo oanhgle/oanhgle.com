@@ -6,8 +6,25 @@
 body {
   transition: all 300ms ease 0s;
   overflow-x: hidden;
-  background-color: #ffffff;
-  color: black;
+  
+  --bg: white;
+  --card: white;
+  --theme: #b1a6c4;
+  --primary: black;
+  --secondary: #6B7280;
+  --ping: #818CF8;
+  --shadow: rgba(152, 168, 188, .2);
+  background-color: var(--bg);
+}
+
+body.dark {
+  --bg: #0d192e;
+  --card: #14233e;
+  --theme: #8cf5d7;
+  --primary: #ced7f3;
+  --secondary: #8a93ad;
+  --ping: #34D399;
+  --shadow: #0a1528;
 }
 
 .full-width-container {
@@ -37,8 +54,7 @@ svg text {
   0% {
     stroke-dasharray: 0 50%;
     stroke-dashoffset:  20%;
-    fill:#b1a6c4
-
+    fill:var(--theme)
   }
   
   100% {
@@ -49,12 +65,32 @@ svg text {
   
 }
 
+body.dark svg text {
+  stroke: var(--theme);
+  animation: textAnimation-dark 5s infinite alternate;
+}
+
+@keyframes textAnimation-dark {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset:  20%;
+    fill: var(--primary);
+  }
+  
+  100% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffstet: -20%;
+    fill: rgba(168, 231, 215, 0)
+  }
+}
+
 /* HIGHLIGHT HOVER */
 .content h1{
   display: inline;
   background-repeat: no-repeat;
   transition: all 500ms ease-in-out;
 }
+
 .highlight h1{
   background-position: left;
   background-size: 0% 100%;
@@ -62,15 +98,43 @@ svg text {
 }
 .highlight:hover h1 {
   background-size: 100% 100%;
+  color: var(--primary);
 }
 .highlight:hover h1 svg path{
   fill:rgb(124, 153, 252);
 }
-
 .highlight-under {
   background: linear-gradient(to top, #d6d4ec 50%, transparent 50%);
 }
 
+body.dark .highlight:hover h1 svg path {
+  fill:var(--theme);
+}
+
+body.dark .highlight h1{
+  background-image: none;
+}
+
+body.dark .highlight:hover #highlight1{
+  color: var(--theme);
+  
+}
+/* 
+body.dark .highlight:hover h1 {
+  color: var(--primary);
+} */
+
+body.dark .highlight-under {
+  background: none;
+}
+
+body.dark .highlight:hover h1 .highlight-under {
+  color:var(--theme);
+}
+
+body.dark .highlight:hover h1 .highlight-under:hover {
+  border-bottom: 2px solid var(--theme);
+}
 
 .aside {
   writing-mode: vertical-lr;
@@ -82,18 +146,125 @@ svg text {
   height: 200px;
 }
 
+/* ICON */
+.icon:hover {
+  color: var(--theme);
+}
+
+body.dark .icon:hover {
+  color: var(--theme);
+}
+
+.text-year {
+  color: var(--theme);
+}
+
+body.dark .text-year {
+  color: var(--theme);
+}
+
+/* SKILLS */
+
+.border-square{
+  border-color: var(--theme);
+}
+
+body.dark .border-square{
+  border-color: var(--theme);
+}
+.bg-primary{
+  background-color: var(--theme);
+}
+
+body.dark .bg-primary{
+  background-color: var(--theme);
+}
+
+/* BUTTON */
+.effect:hover {
+  background-color: var(--theme);
+  color: var(--bg);
+}
+body.dark .effect:hover {
+  background-color: var(--theme);
+  color: var(--bg);
+}
+
 /* NAVIGATION BAR */
 header {
   top: 0;
   z-index:1;
-  background-color: rgba(255, 255, 255, 0.486);
-  backdrop-filter: blur(6px);
+  /* background-color: rgba(255, 255, 255, 0.486); */
+  background-color: rgba(var(--bg), 0.486);
+  backdrop-filter: blur(4px);
   transition: box-shadow 0.3s ease;
+  color: var(--primary)
 }
 header[data-active='true'] {
-  box-shadow: 0 2px 8px rgba(152, 168, 188, .2);
+  box-shadow: 0 2px 8px var(--shadow)
+}
+body.dark header[data-active='true'] {
+  box-shadow: 0 2px 8px var(--shadow)
 }
 header {
   position: fixed;
   width: 100%;
 }
+
+/* Dark mode toggle button */
+.dark-button {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -3px;
+}
+
+.dark-button:before, .dark-button:after {
+  box-sizing: border-box;
+}
+
+.dark-button label {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 46px;
+  border-radius: 100px;
+  border-width: 1px;
+  border-color: #9CA3AF;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.dark-button label:before, .dark-button label:after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  top: 3px;
+  left: 2px;
+  transition: 0.3s ease;
+}
+.dark-button label:before {
+  background-color: #b1a6c4;
+}
+.dark-button label:after {
+  background-color: #0d192e;
+  top: -58px;
+  left: 10px;
+  transform: scale(0.00001);
+}
+.dark-button input[type=checkbox] {
+  display: none;
+}
+.dark-button input[type=checkbox]:checked + label:before {
+  background-color: #8cf5d7;
+  transform: translateY(19px);
+}
+.dark-button input[type=checkbox]:checked + label:after {
+  transform: translateY(75px) scale(1);
+}
+
+

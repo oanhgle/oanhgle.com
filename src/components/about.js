@@ -6,10 +6,10 @@ const AboutPage = () => {
     return(
     <div className="container m-auto mt-25 -mb-10 sm:px-12 md:px-20 max-w-screen-xl px-15 py-40 flex flex-col lg:flex items-center lg:justify-center lg:space-x-6">
             <Fade top>
-                <h1 className="font-mono text-gray-900">{'<'} about me{' />'}</h1>
+                <h1 className="font-mono" style={{color: 'var(--primary)'}}>{'<'} about me{' />'}</h1>
             </Fade>
             <Fade bottom>
-                <div className="content highlight xl:px-40 mt-4 text-center text-lg font-sans text-gray-500 hover:text-black">
+                <div className="content highlight xl:px-40 mt-4 text-center text-lg font-sans" style={{color: 'var(--secondary)'}}>
                     <h1>
                         Hello! My name is Oanh Le. I'm currently a junior studying Computer Science at the University of South Florida {' '}
                         <svg xmlns="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi inline-block" width="21" height="21" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path d="M12 3L1 9l4 2.18v6L12 21l7-3.82v-6l2-1.09V17h2V9L12 3m6.82 6L12 12.72L5.18 9L12 5.28L18.82 9M17 16l-5 2.72L7 16v-3.73L12 15l5-2.73V16z" fill="currentColor"></path></svg>.
