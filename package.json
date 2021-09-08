@@ -25,6 +25,7 @@
     "gatsby-plugin-gatsby-cloud": "^2.5.0",
     "gatsby-plugin-smoothscroll": "^1.2.0",
     "gatsby-plugin-styled-components": "^4.5.0",
+    "gatsby-source-filesystem": "^3.13.0",
     "normalize.css": "^8.0.1",
     "react": "^17.0.1",
     "react-circular-progressbar": "^2.0.4",
