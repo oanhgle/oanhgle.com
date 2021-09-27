@@ -50,6 +50,17 @@ export default [
       ],
     },
     {
+      title: 'Data Structures Projects',
+      description: 'Projects for Data Structure class that were implemented in C++',
+      technology: ['C++'],
+      year: '2021',
+      links: [
+        {
+          github: 'https://github.com/oanhgle/data-structures-project',
+        },
+      ],
+    },
+    {
       title: 'COVID Care',
       description: 'This product was designed as a solution for SASEHack 2020. Given the struggles we are facing globally when hospitals and clinics are usually packed, our team built a web app for more efficient healthcare remote access during the pandemic.',
       technology: ['React', 'Bootstrap', 'API'],
