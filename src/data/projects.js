@@ -51,7 +51,7 @@ export default [
     },
     {
       title: 'Data Structures Projects',
-      description: 'Projects for Data Structure class that were implemented in C++',
+      description: 'Projects for Data Structures class that were implemented in C++',
       technology: ['C++'],
       year: '2021',
       links: [
