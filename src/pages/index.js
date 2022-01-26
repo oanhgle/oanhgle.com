@@ -1,12 +1,17 @@
 //import component
 import * as React from 'react'
 import Layout from '../components/layout'
+import NotFound from './404'
+import Footer from '../components/footer'
 
 //define component
 const IndexPage = () => {
   return(
-    <Layout pageTitle = 'Oanh Le'>
-    </Layout>
+    <div>
+    <NotFound pageTitle = 'Oanh Le'>
+    </NotFound>
+    <Footer></Footer>
+    </div>
   )
 }
 
