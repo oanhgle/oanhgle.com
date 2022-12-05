@@ -8,9 +8,7 @@ import Footer from '../components/footer'
 const IndexPage = () => {
   return(
     <div>
-    <NotFound pageTitle = 'Oanh Le'>
-    </NotFound>
-    <Footer></Footer>
+    <Layout pageTitle={'Oanh Le'}></Layout>
     </div>
   )
 }

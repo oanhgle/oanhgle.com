@@ -77,7 +77,7 @@ const SkillPage = () => {
                         </div>
                     </div>
                     <div className="flex mt-16 font-light" style={{color: 'var(--primary)'}}>
-                        <h1>HTML</h1>
+                        <h1>Python</h1>
                         <div className="mx-20 grid grid-cols-10 gap-3">
                             <span className="w-4 h-4 bg-primary border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
                             <span className="w-4 h-4 bg-primary border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
@@ -85,9 +85,9 @@ const SkillPage = () => {
                             <span className="w-4 h-4 bg-primary border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
                             <span className="w-4 h-4 bg-primary border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
                             <span className="w-4 h-4 bg-primary border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
-                            <span className="w-4 h-4 bg-primary border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
-                            <span className="w-4 h-4 bg-primary border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
-                            <span className="w-4 h-4 bg-primary border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
+                            <span className="w-4 h-4 border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
                             <span className="w-4 h-4 border border-square inset-0 transform hover:rotate-45 transition duration-300"></span>
                         </div>
                     </div>

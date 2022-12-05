@@ -11,7 +11,7 @@ const Footer = () => {
             <span
             className="text-xs tracking-wider self-center md:self-end"
             aria-label="Copyright">
-              © 2021 Oanh Le. All Rights Reserved.
+              © 2021-2022 Oanh Le. All Rights Reserved.
             </span>
           </Fade>
           <div className="flex flex-row items-center space-x-4 justify-center md:justify-end">

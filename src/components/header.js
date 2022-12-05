@@ -7,7 +7,7 @@ const Header = () => {
                 <svg width="100%" height="100%">
                     <text x="50%" y="80%" textAnchor="middle">Oanh Le</text>
                 </svg>
-            <h1 className="text-xl font-bold" style={{color: 'var(--secondary)'}}><Fade>I'm a future Software Engineer</Fade></h1>
+            <h1 className="text-xl font-bold" style={{color: 'var(--secondary)'}}><Fade>I'm a Software Engineer</Fade></h1>
             {/* <h1 className="animate-bounce text-xl text-gray-500 font-bold">see what i/m doing</h1> */} 
         </div> 
     )
